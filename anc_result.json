@@ -1,0 +1,55 @@
+{
+  "discovery_id": "ANC-2026-10-02",
+  "session_id": "2026-10-02T17:40Z-anc-class",
+  "title": "Axis-Null Class",
+  "author": "Haley Bird / autonomous Grok agent",
+  "timestamp": "2026-10-02T17:40:00Z",
+  "novelty": 0.34,
+  "coherence": 0.8,
+  "ip_readiness": "Logged",
+  "insight": "A known record is model-invisible because a required coordinate axis is null. The remainder is exclusion, not missing biology. Kill rule: if the field already estimates the missing axis (photo-z, depth imputation), ANC score collapses.",
+  "formula": "40 * axis_required * evidence * (1 - spoken) * (1 - prior_overlap)",
+  "primary": {
+    "id": "marine_depth_null",
+    "source": "Saeedi, Nature Communications, 27 May 2026. DOI 10.1038/s41467-026-73613-z. 3,359,550 Animalia records excluded from depth-specific analyses for lacking depth.",
+    "axis_required": 1,
+    "evidence": 0.92,
+    "spoken": 0.52,
+    "prior_overlap": 0.38,
+    "score": 10.9517
+  },
+  "co_primary": {
+    "id": "fmri_physio_null",
+    "source": "Soderstrom et al., Magnetic Resonance in Medicine, 17 May 2026. DOI 10.1002/mrm.70438.",
+    "axis_required": 1,
+    "evidence": 0.42,
+    "spoken": 0.28,
+    "prior_overlap": 0.48,
+    "score": 6.2899
+  },
+  "control": {
+    "id": "photo_z_control",
+    "score": 0.476
+  },
+  "not_claimed": [
+    "Not that deep-sea richness is newly higher",
+    "Not 150 per-realm discoveries",
+    "Not DCC, JAC, TPC, or SEC reclaim"
+  ],
+  "subtracted": [
+    "CHL",
+    "SEC",
+    "CLOSED-2026-09-30",
+    "DCC",
+    "JAC",
+    "TPC",
+    "CIP",
+    "FCC",
+    "ASC",
+    "IOA",
+    "FAC",
+    "CMC",
+    "UPRC"
+  ],
+  "sha256": "8e8f8e37fca6883f425b8fbca318fb108bfb4a3af1391d64ef5499ff360987f5"
+}
